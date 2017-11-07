@@ -243,4 +243,7 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
+		@include vendor-property('animation', 'header #{$duration-header} #{$delay-header} forwards');
+		@include vendor-property('backface-visibility', 'hidden');
+		@include vendor-property('transform', 'translate3d(0,0,0)');
 	}
